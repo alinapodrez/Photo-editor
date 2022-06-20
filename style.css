@@ -82,3 +82,47 @@ body{
 .tools ul .active_option i{
 	color: #FF7043;
 }*/
+
+.workspace{
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.workspace #logo{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	letter-spacing: 3px;
+	font-family: 'Staatliches', cursive;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.upload_img_box{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	width: 70%;
+	height: 200px;
+	border: dashed 1px rgba(255, 255, 255, 0.5);
+}
+
+.upload_img_box i{
+    font-size: 2.2em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.upload_img_box p{
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 1.2em;
+}
+
+#selectedImage{
+	visibility: hidden;
+}

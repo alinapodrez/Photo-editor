@@ -109,7 +109,7 @@ body{
 	align-items: center;
 	cursor: pointer;
 	width: 70%;
-	height: 200px;
+	height: 300px;
 	border: dashed 1px rgba(255, 255, 255, 0.5);
 }
 
@@ -124,5 +124,106 @@ body{
 }
 
 #selectedImage{
-	visibility: hidden;
+	display: none;
+}
+
+#canvas{
+	display: none;
+}
+
+/*image holder part*/
+.image_holder{
+	position: relative;
+	display: none;
+    width: 100%;
+    height: 80%;
+}
+.image_holder img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+.image_holder button{
+	position: absolute;
+	display: none;
+	top: -30px;
+	left: 0px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	color: #FF7043;
+	font-size: 1.8em;
+	background: none;
+	transform: rotate(270deg);
+}
+
+/*options part */
+.options{
+	
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0.1px 4px 8px 5px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 0.05);
+	padding: 0 25px;
+	height: 50px;
+	width: 50%;
+
+	position: absolute;
+	bottom: 0;
+
+	transform: translateY(80px);
+	transition: 0.5s;
+}
+
+/*
+.options .active_controller{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	justify-content: space-between;
+}
+.label{
+	display: none;
+}
+.label p{
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+//Range slider
+
+input[type="range"]{
+	width: 80%;
+	height: 5px;
+	cursor: pointer;
+	outline: none;
+}
+*/
+
+/* clear or reset btn */
+
+#clearAll{
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	color: #17202A;
+	background: #FF7043;
+	box-shadow: 0.1px 4px 8px 5px rgba(0, 0, 0, 0.1);
+
+	transform: translateX(150px);
+	transition: 0.5s;
+	
+}
+
+#clearAll span{
+	margin-right: 10px;
 }
